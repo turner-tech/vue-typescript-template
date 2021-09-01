@@ -7,6 +7,9 @@ module.exports = {
         libraryName: "ant-design-vue",
         libraryDirectory: "es",
         style: "css",
+        targets: {
+          node: "current",
+        },
       },
     ], // `style: true` for less
   ],
