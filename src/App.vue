@@ -14,7 +14,7 @@
         <a-breadcrumb-item>List</a-breadcrumb-item>
         <a-breadcrumb-item>App</a-breadcrumb-item>
       </a-breadcrumb> -->
-      <div className="site-layout-content">
+      <div class="site-layout-content">
         <router-view />
       </div> </a-layout-content
     ><a-layout-footer
@@ -30,6 +30,20 @@
     </a-layout-footer>
   </a-layout>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { Layout } from "ant-design-vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    "a-layout-header": Layout.Header,
+    "a-layout-content": Layout.Content,
+    "a-layout-footer": Layout.Footer,
+  },
+});
+</script>
 
 <style lang="scss">
 #app {

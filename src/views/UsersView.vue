@@ -18,7 +18,6 @@ import RandomUserService from "../services/RandomUserService";
 import { defineComponent } from "vue";
 import UserCardList from "@/components/UserCardList.vue";
 import { RandomUser } from "@/models/RandomUser";
-// const RandomUserService = require('../services/RandomUserService')
 
 export default defineComponent({
   name: "UsersView",
